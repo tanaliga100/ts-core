@@ -1,0 +1,23 @@
+{
+  "name": "ts-core",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tsc -w",
+    "compile": "nodemon dist/index.js",
+    "start": "concurrently \"npm run build\"  \"npm run compile\" ",
+    "client": "cd dist && npm run dev",
+    "dev": "concurrently --kill-others-on-fail \" npm run client\" \"npm run server \"  "
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.0.3",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
