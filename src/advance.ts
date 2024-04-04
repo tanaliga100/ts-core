@@ -1,7 +1,6 @@
 console.log('ADVANCE');
 
 // OMIT
-
 type Person = {
   id: string;
   name: string;
@@ -9,7 +8,6 @@ type Person = {
   gender: Gender;
   createdAt: Date;
   updatedAt: Date;
-  
 }
 
 type CreatePerson = Partial<Person>; /*hindi required */
@@ -28,7 +26,6 @@ const personthree: ChangePerson = {
   createdAt: new Date(Date.now()),
   updatedAt: new Date(Date.now() + 100000)
 }
-
 
 const UserTypes  = {
   ADMIN: "admin",
