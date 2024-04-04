@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "npx tsc -w",
-    "compile": "nodemon dist/index.js",
+    "compile": "nodemon dist/functions.js ",
     "start": "concurrently \"npm run build\"  \"npm run compile\" ",
     "client": "cd dist && npm run dev",
     "dev": "concurrently --kill-others-on-fail \" npm run client\" \"npm run server \"  "
